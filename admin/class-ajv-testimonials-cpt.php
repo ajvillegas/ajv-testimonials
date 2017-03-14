@@ -105,7 +105,7 @@ class AJV_Testimonials_CPT {
 	public function custom_taxonomy() {
 		
 		register_taxonomy( 'ajv_testimonial_category', 'ajv_testimonials', array(
-				'labels' => 'ajv_testimonials', apply_filters( 'ajv_testimonials_taxonomy_labels', array(
+				'labels' => apply_filters( 'ajv_testimonials_taxonomy_labels', array(
 					'name'						=> _x( 'Testimonial Categories', 'taxonomy general name', 'ajv-testimonials' ),
 					'singular_name'				=> _x( 'Testimonial Category', 'taxonomy singular name', 'ajv-testimonials' ),
 					'menu_name'					=> __( 'Categories', 'ajv-testimonials' ),
