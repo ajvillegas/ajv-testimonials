@@ -44,8 +44,8 @@ class AJV_Testimonials_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @access   private
-	 * @var      string    $version    The current version of this plugin.
+	 * @param    string    $plugin_name		The name of this plugin.
+	 * @param    string    $version			The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
@@ -62,7 +62,7 @@ class AJV_Testimonials_Public {
 	public function register_shortcodes() {
 		
 		// Testimonials shortcode
-		add_shortcode( 'ajv_testimonials', array( $this, 'display_testimonials' ) );
+		add_shortcode( 'ajv-testimonials', array( $this, 'display_testimonials' ) );
 		
 	}
 	
@@ -123,11 +123,11 @@ class AJV_Testimonials_Public {
 					$height = (int) 150;
 					$image_id = get_post_meta( $post_id, '_thumbnail_id', true );
 					$image = wp_get_attachment_image( $image_id, array( $width, $height ), false, array( "style" => "display:block;" ) );
-					$text = get_post_meta( $post_id, '_meta_testimonial_text', true );
+					$text = get_post_meta( $post_id, '_ajv_testimonial_text', true );
 					$author = $query->post_title;
-					$position = get_post_meta( $post_id, '_meta_testimonial_position', true );
-					$company = get_post_meta( $post_id, '_meta_testimonial_company', true );
-					$url = get_post_meta( $post_id, '_meta_testimonial_url', true );
+					$position = get_post_meta( $post_id, '_ajv_testimonial_position', true );
+					$company = get_post_meta( $post_id, '_ajv_testimonial_company', true );
+					$url = get_post_meta( $post_id, '_ajv_testimonial_url', true );
 					
 					if ( $text && $author ) { ?>
 						
