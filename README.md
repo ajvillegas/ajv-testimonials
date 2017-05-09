@@ -5,7 +5,7 @@ Easily manage and display client testimonials on your website.
 **Contributors**: [ajvillegas](http://profiles.wordpress.org/ajvillegas)  
 **Tags**: [testimonials](http://wordpress.org/plugins/tags/testimonials), [shortcode](http://wordpress.org/plugins/tags/shortcode)  
 **Requires at least**: 4.5  
-**Tested up to**: 4.8 
+**Tested up to**: 4.8  
 **Stable tag**: 1.0.1  
 **License**: [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
