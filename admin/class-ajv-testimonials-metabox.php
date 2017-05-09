@@ -44,8 +44,8 @@ class AJV_Testimonials_Metabox {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of this plugin.
-	 * @param      string    $version    The version of this plugin.
+	 * @param    string    $plugin_name		The name of this plugin.
+	 * @param    string    $version			The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
@@ -98,20 +98,20 @@ class AJV_Testimonials_Metabox {
 		}
 		
 		// Check for input and sanitize/save if needed
-		if ( isset( $_POST[ '_meta_testimonial_text' ] ) ) {
-			update_post_meta( $post_id, '_meta_testimonial_text', esc_textarea( $_POST[ '_meta_testimonial_text' ] ) );
+		if ( isset( $_POST[ '_ajv_testimonial_text' ] ) ) {
+			update_post_meta( $post_id, '_ajv_testimonial_text', esc_textarea( $_POST[ '_ajv_testimonial_text' ] ) );
 		}
 		
-		if ( isset( $_POST[ '_meta_testimonial_company' ] ) ) {
-			update_post_meta( $post_id, '_meta_testimonial_company', sanitize_text_field( $_POST[ '_meta_testimonial_company' ] ) );
+		if ( isset( $_POST[ '_ajv_testimonial_company' ] ) ) {
+			update_post_meta( $post_id, '_ajv_testimonial_company', sanitize_text_field( $_POST[ '_ajv_testimonial_company' ] ) );
 		}
 		
-		if ( isset( $_POST[ '_meta_testimonial_position' ] ) ) {
-			update_post_meta( $post_id, '_meta_testimonial_position', sanitize_text_field( $_POST[ '_meta_testimonial_position' ] ) );
+		if ( isset( $_POST[ '_ajv_testimonial_position' ] ) ) {
+			update_post_meta( $post_id, '_ajv_testimonial_position', sanitize_text_field( $_POST[ '_ajv_testimonial_position' ] ) );
 		}
 		
-		if ( isset( $_POST[ '_meta_testimonial_url' ] ) ) {
-			update_post_meta( $post_id, '_meta_testimonial_url', esc_url( $_POST[ '_meta_testimonial_url' ] ) );
+		if ( isset( $_POST[ '_ajv_testimonial_url' ] ) ) {
+			update_post_meta( $post_id, '_ajv_testimonial_url', esc_url( $_POST[ '_ajv_testimonial_url' ] ) );
 		}
 		
 	}
