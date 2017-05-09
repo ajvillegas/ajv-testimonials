@@ -69,7 +69,7 @@ class AJV_Testimonials {
 	public function __construct() {
 
 		$this->plugin_name = 'ajv-testimonials';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_cpt_hooks();
@@ -229,12 +229,6 @@ class AJV_Testimonials {
 		
 		// Change default post admin table columns order
 		$this->loader->add_action( 'pre_get_posts', $plugin_admin, 'orderby_admin_columns' );
-		
-		// Add custom taxonomy admin table columns
-		$this->loader->add_filter( 'manage_edit-ajv_testimonial_category_columns', $plugin_admin, 'edit_admin_tax_columns' );
-		
-		// Add cotent to custom taxonomy admin table columns
-		$this->loader->add_action( 'manage_ajv_testimonial_category_custom_column', $plugin_admin, 'define_admin_tax_columns', 10, 3 );
 		
 		// Register custom TinyMCE button
 		$this->loader->add_filter( 'mce_buttons_2', $plugin_admin, 'register_tinymce_button' );
