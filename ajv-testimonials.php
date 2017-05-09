@@ -16,7 +16,7 @@
  * Plugin Name:       AJV Testimonials
  * Plugin URI:        http://www.alexisvillegas.com/plugins/ajv-testimonials
  * Description:       Easily manage and display client testimonials on your website.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Alexis J. Villegas
  * Author URI:        http://www.alexisvillegas.com
  * License:           GPL-2.0+
