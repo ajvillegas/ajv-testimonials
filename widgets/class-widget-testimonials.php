@@ -52,7 +52,7 @@ class AJV_Testimonials_Widget extends WP_Widget {
 			'custom_classes' => '',
 		) );
 		
-		$shortcode_content = do_shortcode( '[ajv_testimonials]' );
+		$shortcode_content = do_shortcode( '[ajv-testimonials]' );
 		
 		if ( !empty( $shortcode_content ) ) {
 		
@@ -82,7 +82,7 @@ class AJV_Testimonials_Widget extends WP_Widget {
 		    	$custom_classes = '';
 	    	}
 			
-			echo do_shortcode( '[ajv_testimonials'.$category.$custom_classes.']' );
+			echo do_shortcode( '[ajv-testimonials'.$category.$custom_classes.']' );
 			
 			echo $after_widget;
 			
