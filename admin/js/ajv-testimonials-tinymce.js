@@ -16,7 +16,7 @@
             type: 'button',
             icon: 'icon dashicons-testimonial',
             onclick: function() {
-				editor.insertContent( '[ajv_testimonials category="all" class="none"]' );
+				editor.insertContent( '[ajv-testimonials category="all" class="none"]' );
 			}
         } );
         
