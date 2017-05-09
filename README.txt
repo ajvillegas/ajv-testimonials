@@ -41,6 +41,7 @@ The following example shows how you can implement the shortcode on your website:
 
 1. Admin table view
 2. Testimonial editor page
+3. Testimonials widget
 
 == Changelog ==
 
