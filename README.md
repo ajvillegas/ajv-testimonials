@@ -46,6 +46,10 @@ The following example shows how you can implement the shortcode on your website:
 
 ![Testimonial editor page](wp-assets/screenshot-2.png?raw=true)
 
+*Testimonials widget*
+
+![Testimonials widget](wp-assets/screenshot-3.png?raw=true)
+
 # Changelog
 
 **1.0.1**
