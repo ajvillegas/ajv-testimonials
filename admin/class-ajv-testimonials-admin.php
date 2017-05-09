@@ -44,8 +44,8 @@ class AJV_Testimonials_Admin {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of this plugin.
-	 * @param      string    $version    The version of this plugin.
+	 * @param    string    $plugin_name		The name of this plugin.
+	 * @param    string    $version			The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
@@ -100,9 +100,9 @@ class AJV_Testimonials_Admin {
 		$height = (int) 150;
 		$image_id = get_post_meta( $post_id, '_thumbnail_id', true );
 		$image = wp_get_attachment_image( $image_id, array( $width, $height ), false );
-		$position = get_post_meta( $post_id, '_meta_testimonial_position', true );
-		$company = get_post_meta( $post_id, '_meta_testimonial_company', true );
-		$url = get_post_meta( $post_id, '_meta_testimonial_url', true );
+		$position = get_post_meta( $post_id, '_ajv_testimonial_position', true );
+		$company = get_post_meta( $post_id, '_ajv_testimonial_company', true );
+		$url = get_post_meta( $post_id, '_ajv_testimonial_url', true );
 		
 		switch ( $column ) {
 			
@@ -182,38 +182,6 @@ class AJV_Testimonials_Admin {
 		
 		}
 				
-	}
-	
-	/**
-	 * Add custom taxonomy admin table columns.
-	 *
-	 * @since    1.0.0
-	 */
-	public function edit_admin_tax_columns( $columns ) {
-		
-		$columns = array(
-	        'cb'		  => '<input type="checkbox" />',
-	        'name'		  => __( 'Name', 'ajv-testimonials' ),
-	        'description' => __( 'Description', 'ajv-testimonials' ),
-	        'slug'		  => __( 'Slug', 'ajv-testimonials' ),
-	        'posts'		  => __( 'Count', 'ajv-testimonials' ),
-	        'tax-id'	  => __( 'ID', 'ajv-testimonials' ),
-	    );
-	    
-	    return $columns;
-		
-	}
-	
-	/**
-	 * Add cotent to custom taxonomy admin table columns.
-	 *
-	 * @since    1.0.0
-	 */
-	public function define_admin_tax_columns( $value, $name, $id ) {
-		
-		// Display taxonomy ID
-		return 'tax-id' === $name ? $id : $value;
-		
 	}
 	
 	/**
