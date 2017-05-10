@@ -26,7 +26,6 @@
  */
 class AJV_Testimonials_i18n {
 
-
 	/**
 	 * Load the plugin text domain for translation.
 	 *
@@ -41,7 +40,5 @@ class AJV_Testimonials_i18n {
 		);
 
 	}
-
-
 
 }
