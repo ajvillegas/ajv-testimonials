@@ -11,7 +11,7 @@ Easily manage and display client testimonials on your website.
 
 # Description
 
-This plugin allows you to easily manage and display client testimonials on your website by adding a new 'Testimonials' custom post type and custom taxonomy for categorizing testimonials.
+This plugin allows you to easily manage and display client testimonials on your website by adding a new 'Testimonials' custom post type and custom taxonomy for categorizing testimonials. It outputs clean, semantic HTML in the front-end with no styling to make it easy for you to integrate into your theme.
 
 You can display testimonials anywhere on your website using the `[ajv-testimonials]` shortcode or the included 'Testimonials' widget. You can also use the 'Insert Testimonials' button in the page editor to automatically add the shortcode to your page or post content.
 
