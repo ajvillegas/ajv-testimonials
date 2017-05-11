@@ -127,7 +127,7 @@ class AJV_Testimonials_Metabox {
 	    remove_meta_box( 'postimagediv', 'ajv_testimonials', 'side' );
 	    
 	    // Replace Featured Image meta box with custom title
-	    add_meta_box( 'postimagediv', __( 'Client\'s Image', 'ajv-testimonials' ), 'post_thumbnail_meta_box', 'ajv_testimonials', 'side', 'low' );
+	    add_meta_box( 'postimagediv', __( 'Client Image', 'ajv-testimonials' ), 'post_thumbnail_meta_box', 'ajv_testimonials', 'side', 'low' );
 		
 	}
 	
