@@ -79,7 +79,7 @@ class AJV_Testimonials_Public {
 		$atts = shortcode_atts( array(
 	        'category' => 'all',
 	        'class' => 'none',
-	    ), $atts, 'ajv_testimonials' );
+	    ), $atts, 'ajv-testimonials' );
 	    
 	    // Define taxonomy terms
 	    if ( strtolower( $atts['category'] ) == 'all' || empty( $atts['category'] ) ) {
