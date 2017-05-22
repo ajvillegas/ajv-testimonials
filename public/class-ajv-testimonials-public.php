@@ -82,7 +82,7 @@ class AJV_Testimonials_Public {
 	    ), $atts, 'ajv-testimonials' );
 	    
 	    // Define taxonomy terms
-	    if ( strtolower( $atts['category'] ) == 'all' || empty( $atts['category'] ) ) {
+	    if ( 'all' == strtolower( $atts['category'] ) || empty( $atts['category'] ) ) {
 	    	$terms = '';
 	    } else {
 		    $terms = array(
@@ -93,7 +93,7 @@ class AJV_Testimonials_Public {
 	    }
 	    
 	    // Define custom class
-	    if ( strtolower( $atts['class'] ) == 'none' || empty( $atts['class'] ) ) {
+	    if ( 'none' == strtolower( $atts['class'] ) || empty( $atts['class'] ) ) {
 	    	$class = '';
 	    } else {
 		    $class = ' ' . strtolower( $atts['class'] );
