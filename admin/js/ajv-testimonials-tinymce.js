@@ -4,7 +4,7 @@
  * Adds a new button to the TinyMCE editor for inserting
  * the testimonials shortcode.
  *
- * @since      1.0.0
+ * @since    1.0.0
  */
 
 (function() {
