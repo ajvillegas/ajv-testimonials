@@ -13,9 +13,6 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
- *
  * @package    AJV_Testimonials
  * @subpackage AJV_Testimonials/admin
  * @author     Alexis J. Villegas <alexis@ajvillegas.com>

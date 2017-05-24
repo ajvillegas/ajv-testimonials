@@ -9,7 +9,7 @@
  * @since      1.0.0
  *
  * @package    AJV_Testimonials
- * @subpackage AJV_Testimonials/widget
+ * @subpackage AJV_Testimonials/widgets
  */
  
 class AJV_Testimonials_Widget extends WP_Widget {

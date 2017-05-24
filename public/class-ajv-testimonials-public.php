@@ -13,8 +13,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
+ * Defines the 'ajv-testimonials' shortcode.
  *
  * @package    AJV_Testimonials
  * @subpackage AJV_Testimonials/public
