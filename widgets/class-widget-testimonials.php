@@ -100,7 +100,7 @@ class AJV_Testimonials_Widget extends WP_Widget {
 		
 		$instance = $old_instance;
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['custom_classes'] = strip_tags( $new_instance['custom_classes'] );
+		$instance['custom_classes'] = strip_tags( preg_replace( array( '/\s*,\s*/', '/\s+/' ), ' ', $new_instance['custom_classes'] ) );
 		
 		// Validate terms
 		$terms = array();
@@ -148,7 +148,7 @@ class AJV_Testimonials_Widget extends WP_Widget {
 		</p>
 		
 		<p class="category-checklist-label">
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>" style="margin-bottom:0;"><?php _e( 'Categories:', 'ajv-testimonials' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>" style="margin-bottom:0;"><?php _e( 'Limit by category:', 'ajv-testimonials' ); ?></label>
 		</p> <?php
 		
 		// Output terms checklist
@@ -185,9 +185,8 @@ class AJV_Testimonials_Widget extends WP_Widget {
 		echo $output; ?>
 		
 		<p>
-			<label for="<?php echo $this->get_field_id( 'custom_classes' ); ?>"><?php _e( 'Custom classes:', 'ajv-testimonials' ); ?></label>
-			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'custom_classes' ); ?>" name="<?php echo $this->get_field_name( 'custom_classes' ); ?>" value="<?php echo $instance['custom_classes']; ?>" />
-			<span class="description" style="padding-left:2px;"><em><?php _e( 'Separate classes by a space.', 'ajv-testimonials' ) ?></em></span>
+			<label for="<?php echo $this->get_field_id( 'custom_classes' ); ?>"><?php _e( 'CSS classes:', 'ajv-testimonials' ); ?></label>
+			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'custom_classes' ); ?>" name="<?php echo $this->get_field_name( 'custom_classes' ); ?>" value="<?php echo $instance['custom_classes']; ?>"/>
 		</p> <?php
 		
 	}
