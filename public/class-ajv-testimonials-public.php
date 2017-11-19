@@ -86,7 +86,7 @@ class AJV_Testimonials_Public {
 	    } else {
 		    $terms = array(
 				'taxonomy' => 'ajv_testimonial_category',
-				'field'    => 'slug',
+				'field' => 'slug',
 				'terms' => explode( ',', $atts['category'] ),
 			);
 	    }
