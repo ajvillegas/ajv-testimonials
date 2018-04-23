@@ -3,8 +3,8 @@ Contributors: ajvillegas
 Donate link:
 Tags: testimonials, shortcode
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.0.1
+Tested up to: 4.9
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,30 @@ The shortcode accepts two optional parameters, `category` and `class`. You can s
 The following example shows how you can implement the shortcode on your website:
 
 `[ajv-testimonials category="cat1,cat2,cat3" class="class1 class2"]`
+
+**Author Image Size**
+
+The default testimonial author image size is 150px by 150px. If you need to change this size, you can do so using the `ajv_testimonials_avatar_size` filter.
+
+The example below demonstrates how you can implement this filter on your theme:
+
+`add_filter( 'ajv_testimonials_avatar_size', 'myprefix_testimonials_avatar_size' );
+/**
+ * Filter the AJV Testimonials author image size.
+ *
+ * @param   array   An array containing the default image size.
+ * @return  array   An array containing the modified image size.
+ */
+function myprefix_testimonials_avatar_size( $size ) {
+	
+    $size = array(
+        (int) 200, // width
+        (int) 200 // height
+    );
+	
+    return $size;
+	
+}`
 
 == Installation ==
 
@@ -44,6 +68,9 @@ The following example shows how you can implement the shortcode on your website:
 3. Testimonials widget
 
 == Changelog ==
+
+= 1.0.2 =
+* Added the `ajv_testimonials_avatar_size` filter for changing the default testimonial author image size.
 
 = 1.0.1 =
 * Updated post meta IDs.
