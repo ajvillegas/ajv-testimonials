@@ -121,7 +121,7 @@ class AJV_Testimonials_Public {
 					$width = (int) 150;
 					$height = (int) 150;
 					$image_id = get_post_meta( $post_id, '_thumbnail_id', true );
-					$image = wp_get_attachment_image( $image_id, array( $width, $height ), false, array( "style" => "display:block;" ) );
+					$image = wp_get_attachment_image( $image_id, apply_filters( 'ajv_testimonials_avatar_size', array( $width, $height ) ), false, array( "style" => "display:block;" ) );
 					$text = get_post_meta( $post_id, '_ajv_testimonial_text', true );
 					$author = $query->post_title;
 					$position = get_post_meta( $post_id, '_ajv_testimonial_position', true );
@@ -142,7 +142,7 @@ class AJV_Testimonials_Public {
 									<span class="position"><?php echo $position; ?></span> <?php
 									}
 									if ( $company && $url ) { ?>
-									<span class="company"><a href="<?php echo $url; ?>"><?php echo $company; ?></a></span> <?php
+									<span class="company"><a href="<?php echo $url; ?>" target="_blank"><?php echo $company; ?></a></span> <?php
 									} elseif ( $company && empty( $url ) ) { ?>
 									<span class="company"><?php echo $company; ?></span> <?php
 									} ?>
