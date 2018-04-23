@@ -67,7 +67,7 @@
 					<input class="widefat" type="text" name="_ajv_testimonial_url" id="_ajv_testimonial_url" value="<?php if ( isset ( $testimonials_stored_meta['_ajv_testimonial_url'] ) ) echo esc_url( $testimonials_stored_meta['_ajv_testimonial_url'][0] ); ?>" placeholder="http://...">
 				</p>
 				<p>
-					<span class="description"><em><?php _e( 'Enter the link to the client\'s company site, or the portfolio page where the work is displayed.', 'ajv-testimonials' ) ?></em></span>
+					<span class="description"><em><?php _e( 'Enter the link to the client\'s company site.', 'ajv-testimonials' ) ?></em></span>
 				</p>
 			</td>
 		</tr>
