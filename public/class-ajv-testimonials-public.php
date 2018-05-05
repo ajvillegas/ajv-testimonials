@@ -131,20 +131,20 @@ class AJV_Testimonials_Public {
 					if ( $text && $author ) { ?>
 						
 						<blockquote class="testimonial">
-						    <?php echo wpautop( $text ); ?>
+						    <?php echo wpautop( esc_attr( $text ) ); ?>
 						    <footer> <?php 
 								if ( $image ) { ?>
 							    <div class="author-avatar"><?php echo $image; ?></div> <?php
 							    } ?>
 							    <cite>
-									<span class="author"><?php echo $author; ?></span> <?php
+									<span class="author"><?php echo esc_html( $author ); ?></span> <?php
 									if ( $position ) { ?>
-									<span class="position"><?php echo $position; ?></span> <?php
+									<span class="position"><?php echo esc_html( $position ); ?></span> <?php
 									}
 									if ( $company && $url ) { ?>
-									<span class="company"><a href="<?php echo $url; ?>" target="_blank"><?php echo $company; ?></a></span> <?php
+									<span class="company"><a href="<?php echo esc_url( $url ); ?>" target="_blank"><?php echo esc_html( $company ); ?></a></span> <?php
 									} elseif ( $company && empty( $url ) ) { ?>
-									<span class="company"><?php echo $company; ?></span> <?php
+									<span class="company"><?php echo esc_html( $company ); ?></span> <?php
 									} ?>
 								</cite>
 						    </footer>

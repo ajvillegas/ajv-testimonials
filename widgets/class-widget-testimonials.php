@@ -77,7 +77,7 @@ class AJV_Testimonials_Widget extends WP_Widget {
 	    	
 	    	// Custom Classes
 	    	if ( !empty( $instance['custom_classes'] ) ) {
-	    		$custom_classes = ' class="' . $instance['custom_classes'] . '"';
+	    		$custom_classes = ' class="' . esc_html( $instance['custom_classes'] ) . '"';
 	    	} else {
 		    	$custom_classes = '';
 	    	}
