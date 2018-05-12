@@ -23,16 +23,16 @@ class AJV_Testimonials_Widget extends WP_Widget {
 	public function __construct() {
 		
 		$widget_ops = array(
-			'classname' => 'ajv-testimonials',
+			'classname' => 'ajv-testimonials-widget',
 			'description' => __( 'Displays client testimonials.', 'ajv-testimonials' ),
 			'customize_selective_refresh' => true,
 		);
 		
 		$control_ops = array(
-			'id_base' => 'ajv-testimonials',
+			'id_base' => 'ajv-testimonials-widget',
 		);
 		
-		parent::__construct( 'ajv-testimonials', __( 'Testimonials', 'ajv-testimonials' ), $widget_ops, $control_ops );
+		parent::__construct( 'ajv-testimonials-widget', __( 'Testimonials', 'ajv-testimonials' ), $widget_ops, $control_ops );
 		
 	}
 	
