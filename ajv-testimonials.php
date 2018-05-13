@@ -23,6 +23,7 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       ajv-testimonials
  * Domain Path:       /languages
+ * GitHub Plugin URI: ajvillegas/ajv-testimonials
  */
 
 // If this file is called directly, abort.
